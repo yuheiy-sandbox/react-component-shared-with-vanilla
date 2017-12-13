@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React component shared with vanilla</title>
+    <script src="/main.js" defer></script>
+    <style>
+      button {
+        font-size: inherit;
+      }
+
+      .Disclosure {
+        padding: 1em;
+        border: 1px solid;
+      }
+
+      .Disclosure__content {
+        padding: 1em;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>React component shared with vanilla</h1>
+
+    <section>
+      <h2>Vanilla</h2>
+      <div class="js-react-disclosure" data-heading="Section heading" hidden>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae est consectetur dolorem ratione, possimus debitis laborum voluptatibus. Deleniti dolorum modi est repudiandae cumque molestias nihil, cupiditate quae. Inventore, cumque ipsa?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae est consectetur dolorem ratione, possimus debitis laborum voluptatibus. Deleniti dolorum modi est repudiandae cumque molestias nihil, cupiditate quae. Inventore, cumque ipsa?</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>React</h2>
+      <div id="js-react-counter-app"></div>
+    </section>
+  </body>
+</html>
